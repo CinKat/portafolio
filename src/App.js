@@ -1,8 +1,8 @@
 
 function App() {
   return (
-    <div className="App">
-      <p>App</p>
+    <div>
+      <p>Hello, my name is Katerin. I'am Frontend Developer</p>
     </div>
   );
 }
