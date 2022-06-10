@@ -80,8 +80,7 @@ export const reset = css`
 `;
 
 export const global = css`
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Montserrat:wght@600;700&display=swap');
-  
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600;700&family=Merriweather+Sans:wght@300;600;700&display=swap');  
   body {
     font-family: ${fonts.primary};
     padding: 1rem;

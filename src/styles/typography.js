@@ -1,4 +1,4 @@
 export const fonts = {
-  primary: `'Fira Code', monospace`,
-  secondary: `'Montserrat', sans-serif`,
+  primary: `'Catamaran', sans-serif`,
+  secondary: `'Merriweather Sans', sans-serif`,
 };
