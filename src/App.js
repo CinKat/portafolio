@@ -1,8 +1,10 @@
+import Navbar from "./components/Navbar";
+import React from 'react';
 
 function App() {
   return (
     <div>
-      <p>Hello, my name is Katerin. I'am Frontend Developer</p>
+      <Navbar />
     </div>
   );
 }

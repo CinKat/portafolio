@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import { colors } from "./colors";
 import { fonts } from "./typography";
 
 export const reset = css`
@@ -86,5 +87,7 @@ export const global = css`
     padding: 1rem;
     max-width: 360px;
     margin: 0 auto;
+    background-color: ${colors.yellow[300]};
+    /* font-weight: 400; */
   }
 `
