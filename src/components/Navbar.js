@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { useState } from "react";
 import { colors } from "../styles/colors";
 import HamburgerButton from "./Hamburger";
+import Logo from "../assets/icon/logo.svg"
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -11,12 +12,12 @@ function Navbar() {
   }
   return (
     <NavContainer>
-      <Logo>CKATERIN</Logo>
+      <img src={Logo} />
       <div className={`links ${clicked ? 'active' : ''}`}>
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de mi</a>
-        <a href="#">Potafólio</a>
-        <a href="#">Contacto</a>
+        <a href="#">inicio</a>
+        <a href="#">acerca de mi</a>
+        <a href="#">potafólio</a>
+        <a href="#">contacto</a>
       </div>
       <HamburgerButton clicked={clicked} handleClick={handleClick} />
     </NavContainer>
@@ -51,9 +52,4 @@ const NavContainer = styled.nav`
     text-decoration: none;
     color: black;
   }
-`
-const Logo = styled.h1`
-  letter-spacing: 1px;
-  color: ${colors.green[100]};
-  font-size: 22px;
 `
