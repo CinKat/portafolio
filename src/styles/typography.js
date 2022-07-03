@@ -11,11 +11,11 @@ export const typography = {
     `,
     h2: `
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
     `,
     h3: `
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 1.8rem;
     `,
     h4: `
     font-size: 1.25rem;
@@ -39,6 +39,42 @@ export const typography = {
     body1: `
     font-size: 1.5rem;
     line-height: 1rem;
-    `
+    `,
+    body2: `
+    font-size: 0.82rem;
+    line-height: 1.2rem;
+    `,
+    body3: `
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+    `,
+    body4: `
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    `,
+    body5: `
+    font-size: 1rem;
+    line-height: 1.5rem;
+    `,
+    body6: `
+    font-size: 0.5rem;
+    line-height: 1rem;
+    `,
+    button: `
+    font-size: 1.125rem;
+    line-height: 1rem;
+    `,
+    button2: `
+    font-size: 0.87rem;
+    line-height: 1rem;
+    `,
+    caption: `
+    font-size: 0.75rem;
+    line-height: 1rem;
+    `,
+    caption2: `
+    font-size: 0.5rem;
+    line-height: 1rem;
+    `,
   }
 }
