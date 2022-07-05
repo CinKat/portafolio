@@ -22,6 +22,5 @@ const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   gap:0.3rem;
-  margin-top: 2.31rem;
 `
 export default Button;

@@ -24,7 +24,7 @@ function Hero() {
 }
 
 const ContainerHero = styled.div`
-  padding: 44px 0;
+  padding-top: 2.75rem;
   text-align: center;
 `;
 const Icon = styled.img`

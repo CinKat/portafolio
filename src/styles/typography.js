@@ -34,7 +34,7 @@ export const typography = {
     `,
     subtitle3: `
     font-size: 0.9rem;
-    line-height: 3.75rem;
+    line-height: 2rem;
     `,
     body1: `
     font-size: 1.5rem;
