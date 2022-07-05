@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { colors } from "../styles/colors";
-import { typography } from "../styles/typography";
 import { Heading, Text } from "./Typography";
 import Twiter from "../assets/icon/twitter.svg";
 import Github from "../assets/icon/github.svg";

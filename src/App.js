@@ -1,7 +1,10 @@
 import Navbar from "./components/Navbar";
 import React from 'react';
 import Inicio from "../src/pages/Inicio";
-import Acerca from "../src/pages/Acerca"
+import Acerca from "../src/pages/Acerca";
+import Portafolio from "./pages/Portafolio";
+import Contacto from "../src/pages/Contacto";
+
 import { Navigate, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -14,6 +17,8 @@ function App() {
           <Route path="*" element={<Navigate to="/inicio" />} />
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/acerca" element={<Acerca />} />
+          <Route path="/portafolio" element={<Portafolio />} />
+          <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>
     </>
@@ -21,3 +26,4 @@ function App() {
 }
 
 export default App;
+
