@@ -1,7 +1,7 @@
 import Hero from "../../components/Hero";
 import Card from "../../components/Card";
 import ImageCard from "../../components/ImageCard";
-import Button from "../../components/Button"
+import { StyleLink } from "../../components/StyleLink"
 import styled from "@emotion/styled";
 import { Text } from "../../components/Typography";
 
@@ -15,7 +15,7 @@ function Inicio() {
       <Hero />
       <Text size="subtitle3" weight="700">Mis habilidades</Text>
       <Card />
-      <Button children="Ver más skills" icon={arrow} />
+      <StyleLink children="Ver más skills" to="/acerca" icon={arrow} />
       <Text size="subtitle3" weight="700">Algunos de mis proyectos</Text>
       <ImageCard />
     </Container>
