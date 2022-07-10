@@ -1,5 +1,5 @@
 import Hero from "../../components/Hero";
-import Card from "../../components/Card";
+import SkillCards from "../../components/SkillCards";
 import ImageCard from "../../components/ImageCard";
 import { StyleLink } from "../../components/StyleLink"
 import styled from "@emotion/styled";
@@ -14,7 +14,7 @@ function Inicio() {
     <Container>
       <Hero />
       <Text size="subtitle3" weight="700">Mis habilidades</Text>
-      <Card />
+      <SkillCards number={3} />
       <StyleLink children="Ver más skills" to="/acerca" icon={arrow} />
       <Text size="subtitle3" weight="700">Algunos de mis proyectos</Text>
       <ImageCard />

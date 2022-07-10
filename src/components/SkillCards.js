@@ -3,7 +3,7 @@ import { colors } from "../styles/colors";
 import { Heading, Text } from "./Typography";
 import Phone from "../assets/icon/phone.svg";
 
-function Card() {
+function SkillCards({ number }) {
   const skills = [
     {
       title: "Responsive design",
@@ -20,15 +20,28 @@ function Card() {
       image: Phone,
       body: "Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto."
     },
+    {
+      title: "Responsive design",
+      image: Phone,
+      body: "Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto."
+    },
+    {
+      title: "Responsive design",
+      image: Phone,
+      body: "Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto."
+    },
   ]
+  number = !number ? skills.length : number;
   return (
+
     <Wrapper>
-      {skills.map((item) => (
-        <ContainerCard key={item.title}>
+      {skills.map((item, index) => (
+        index + 1 <= number ? <ContainerCard key={item.title}>
           <StyleIcon src={item.image} />
           <Heading size="h4" weight="600" spacing="0.25px">{item.title}</Heading>
           <Text size="body4">{item.body}</Text>
-        </ContainerCard>
+        </ContainerCard> : ""
+
       ))}
     </Wrapper>
   )
@@ -52,4 +65,4 @@ const StyleIcon = styled.img`
   width:3.12rem;
   height:3.12rem;
 `
-export default Card;
+export default SkillCards;
