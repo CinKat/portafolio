@@ -33,7 +33,6 @@ function SkillCards({ number }) {
   ]
   number = !number ? skills.length : number;
   return (
-
     <Wrapper>
       {skills.map((item, index) => (
         index + 1 <= number ? <ContainerCard key={item.title}>

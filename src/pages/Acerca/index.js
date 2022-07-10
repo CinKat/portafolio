@@ -2,6 +2,7 @@ import styled from "styled-components";
 import SkillCards from "../../components/SkillCards";
 import Description from "../../components/Description";
 import { Text } from "../../components/Typography";
+import StackCards from "../../components/StackCards";
 
 
 function Acerca() {
@@ -9,7 +10,8 @@ function Acerca() {
     <Container>
       <Description />
       <Text size="subtitle3" weight="700">Mis habilidades</Text>
-      <SkillCards/>
+      <SkillCards />
+      <StackCards />
     </Container>
   )
 }
