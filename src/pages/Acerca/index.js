@@ -11,6 +11,7 @@ function Acerca() {
       <Description />
       <Text size="subtitle3" weight="700">Mis habilidades</Text>
       <SkillCards />
+      <Text size="subtitle3" weight="700">Stack Tecnológico</Text>
       <StackCards />
     </Container>
   )
