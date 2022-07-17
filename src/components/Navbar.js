@@ -9,6 +9,11 @@ import { fonts } from "../styles/typography";
 function Navbar() {
   const [clicked, setClicked] = useState(false);
 
+  // useEffect(() => {
+  //   const timer = setTimeout(() => console.log("Hello, World!"), 3000);
+  //   return () => clearTimeout(timer);
+  // }, []);
+
   const handleClick = () => {
     setClicked(!clicked);
   }
@@ -20,16 +25,16 @@ function Navbar() {
       <div className={`links ${clicked ? 'active' : ''}`}>
         <NavLink to="/inicio" className={({ isActive }) =>
           isActive ? 'activeStyle' : undefined
-        }>inicio</NavLink>
+        } onClick={handleClick}>inicio</NavLink>
         <NavLink to="/acerca" className={({ isActive }) =>
           isActive ? 'activeStyle' : undefined
-        }>acerca de mi</NavLink>
+        } onClick={handleClick}>acerca de mi</NavLink>
         <NavLink to="/portafolio" className={({ isActive }) =>
           isActive ? 'activeStyle' : undefined
-        }>potafólio</NavLink>
+        } onClick={handleClick}>potafólio</NavLink>
         <NavLink to="/contacto" className={({ isActive }) =>
           isActive ? 'activeStyle' : undefined
-        }>contacto</NavLink>
+        } onClick={handleClick}>contacto</NavLink>
       </div>
       <HamburgerButton clicked={clicked} handleClick={handleClick} />
     </NavContainer>
@@ -71,6 +76,9 @@ const NavContainer = styled.nav`
     font-family: ${fonts.secondary};
     font-weight: 400;
     font-size: 19px;
+    &:hover {
+      color: ${colors.orange[100]};
+    }
   }
 
   .activeStyle {
