@@ -5,6 +5,9 @@ import Twiter from "../assets/icon/twitter.svg";
 import Github from "../assets/icon/github.svg";
 import Linkedln from "../assets/icon/linkedln.svg";
 import Instagram from "../assets/icon/instagram.svg";
+import Icon from "../assets/icon/icon";
+import { Button } from "./StyleLink";
+import Social from "./Social";
 
 function Hero() {
   return (
@@ -14,10 +17,7 @@ function Hero() {
       <Heading color={colors.green[100]}>Frontend Developer</Heading>
       <Text>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</Text>
       <SocialMedia>
-        <Icon src={Twiter} />
-        <Icon src={Github} />
-        <Icon src={Linkedln} />
-        <Icon src={Instagram} />
+        <Social />
       </SocialMedia>
     </ContainerHero>
   )
@@ -27,7 +27,7 @@ const ContainerHero = styled.div`
   padding-top: 2.75rem;
   text-align: center;
 `;
-const Icon = styled.img`
+const StyleIcon = styled(Icon)`
   width: 2.31rem;
   height: 2.36rem;
 `
