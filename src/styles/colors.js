@@ -18,4 +18,5 @@ export const colors = {
   },
 
   white: "#FFFFFF",
+  gray: "#596362",
 }

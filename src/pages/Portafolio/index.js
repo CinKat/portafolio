@@ -1,6 +1,10 @@
+import ProyectCard from "../../components/ProyectCard";
+
 function Portafolio() {
   return (
-    <div>Portafolio</div>
+    <div>
+      <ProyectCard />
+    </div>
   )
 }
 
